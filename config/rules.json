@@ -1,0 +1,61 @@
+{
+  "rules": [
+    {
+      "id": 1,
+      "name": "Block Telnet",
+      "protocol": "TCP",
+      "dst_port": 23,
+      "action": "BLOCK",
+      "enabled": true
+    },
+    {
+      "id": 2,
+      "name": "Block RDP",
+      "protocol": "TCP",
+      "dst_port": 3389,
+      "action": "BLOCK",
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "name": "Allow HTTP",
+      "protocol": "TCP",
+      "dst_port": 80,
+      "action": "ALLOW",
+      "enabled": true
+    },
+    {
+      "id": 5,
+      "name": "Allow DNS",
+      "protocol": "UDP",
+      "dst_port": 53,
+      "action": "ALLOW",
+      "enabled": true
+    },
+    {
+      "id": 6,
+      "name": "Block FTP",
+      "protocol": "TCP",
+      "dst_port": 21,
+      "action": "BLOCK",
+      "enabled": true
+    },
+    {
+      "id": 7,
+      "name": "Block HTTPS",
+      "protocol": "TCP",
+      "dst_port": 443,
+      "action": "BLOCK",
+      "enabled": true
+    }
+  ],
+  "blocked_ips": [
+    "185.220.101.5"
+  ],
+  "settings": {
+    "scan_threshold": 15,
+    "scan_window_seconds": 10,
+    "syn_flood_threshold": 100,
+    "auto_block_duration_seconds": 300
+  }
+}

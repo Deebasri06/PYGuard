@@ -42,6 +42,3 @@ streamlit run app.py
 | Rules Manager | Add/delete firewall rules, block IPs |
 | Alerts | IDS threat detections |
 | Logs | Full packet history |
-
-## Screenshots
-*(Add screenshots here)*
